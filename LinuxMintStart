@@ -25,3 +25,9 @@ EOF
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh && \
 echo 'eval "$(atuin init bash)"' >> ~/.bashrc && source ~/.bashrc
 
+
+
+
+// then a small maintaince script
+
+echo "alias up='sudo apt update && sudo apt full-upgrade -y && flatpak update -y && sudo apt autoremove -y && flatpak uninstall --unused -y'" >> ~/.bashrc && source ~/.bashrc
